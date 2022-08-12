@@ -62,7 +62,7 @@ Main Features
 
    team
    privacy
-
+   
 .. toctree::
    :hidden:
    :maxdepth: 1
@@ -101,17 +101,17 @@ Main Features
    user/configuration/Speech
    user/configuration/Vehicle profile flags
    user/configuration/Vehicleprofile
-   user/configuration/Vehicleprofile_Bike Cycleway
-   user/configuration/Vehicleprofile_Bike on Asphalt
-   user/configuration/Vehicleprofile_Car no Highway
-   user/configuration/Vehicleprofile_Hike Bike hard
-   user/configuration/Vehicleprofile_Hike Bike on Ground Gravel
+   user/configuration/vehicleprofile/vehicleprofile_bike_cycleway
+   user/configuration/vehicleprofile/vehicleprofile_bike_on_asphalt
+   user/configuration/vehicleprofile/vehicleprofile_car_no_highway
+   user/configuration/vehicleprofile/vehicleprofile_hike_bike_hard
+   user/configuration/vehicleprofile/vehicleprofile_hike_bike_on_ground_gravel
    user/configuration/maps/binfile
    user/faq/Failed to connect graphics to gui
    user/faq/Gpsd Troubleshooting
    user/faq/Troubleshooting
 
-
+   
 .. Indices and tables
 .. ------------------
 
