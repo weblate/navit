@@ -35,16 +35,12 @@ logo used at
 -  website
 
    -  Main website favicon (on https://www.navit-project.org/)
-   -  Main website logo
-      (https://www.navit-project.org/assets/images/logo.png)
-   -  Navit forum (https://forum.navit-project.org/)
+   -  Main website logo (https://www.navit-project.org/assets/images/logo.png)
    -  Github website (https://github.com/navit-gps/)
    -  Sourceforge website (https://sourceforge.net/projects/navit/)
-   -  Trac website (http://trac.navit-project.org/)
    -  Wikipedia page (https://en.wikipedia.org/wiki/Navit)
    -  Twitter (https://twitter.com/NavitProject)
 
--  wiki (https://wiki.navit-project.org)
 -  app stores
 
    -  google play
