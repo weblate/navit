@@ -62,12 +62,12 @@ Main Features
 
    team
    privacy
-   
+
 .. toctree::
    :hidden:
    :maxdepth: 1
    :glob:
-   :caption: Alter Mist
+   :caption: Old Wiki
 
    user/community/Main Page_support box
    user/configuration/Configuration (old)
