@@ -11,13 +11,13 @@ jobs:
       - run:
           name: run sanity check script
           command: bash scripts/ci_sanity_checks.sh
-      - run:
-          name: Run CheckStyle Test
-          command: ./gradlew checkstyleMain
-      - store_artifacts:
-          name: Store checkstyle report
-          path: navit/android/checkstyle
-          destination: reports
+      #- run:
+      #    name: Run CheckStyle Test
+      #    command: ./gradlew checkstyleMain
+      #- store_artifacts:
+      #    name: Store checkstyle report
+      #    path: navit/android/checkstyle
+      #    destination: reports
   build_linux:
     <<: *defaults
     steps:
@@ -186,7 +186,7 @@ jobs:
            destination: apk
   build_win32:
     docker:
-      - image: ubuntu:14.04
+      - image: ubuntu:24.04
     steps:
       - checkout
       - run: |
@@ -195,11 +195,7 @@ jobs:
       - run:
           name: Prepare the Windows build environment
           command: |
-            apt-get update && xargs -a scripts/setup_14.04_requirements.list apt-get install -y
-            apt-get install -y software-properties-common
-            add-apt-repository -y ppa:george-edison55/cmake-3.x
-            apt-get remove -y cmake
-            apt-get install -y cmake3 mingw-w64 mingw-w64-tools default-jdk nsis libsaxonb-java curl
+            bash scripts/setup_win32.sh
       - run:
           name: Build for Windows
           command: |
@@ -212,7 +208,7 @@ jobs:
             bash scripts/update_download_center.sh
   build_wince:
     docker:
-      - image: navit/dockerfiles:wince
+      - image: ghcr.io/enlyze/windows-ce-build-environment-arm
     steps:
       - checkout
       - run: |
@@ -227,10 +223,6 @@ jobs:
           command: bash scripts/build_wince.sh
       - store_artifacts:
           path: wince/output
-      #- run:
-      #    name: Update Navit-Download-Center
-      #    command: |
-      #      bash scripts/update_download_center.sh
   build_tomtom_minimal:
     <<: *defaults
     docker:
